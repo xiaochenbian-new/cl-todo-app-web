@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Todo工具是四象限待办 Android 应用：任务、想法、纪念日提醒；VIP 解锁密码本、黄金记账与 WebDAV 多端同步。"
+    />
+    <meta
+      name="keywords"
+      content="Todo工具,四象限,待办,任务管理,纪念日,想法,密码本,黄金记账,WebDAV,Android"
+    />
+    <meta name="theme-color" content="#1a7a45" />
+    <title>Todo工具 — 四象限待办 · 想法 · 纪念日</title>
+    <link rel="canonical" href="https://cl-todo-app-web.pages.dev/" />
+    <link rel="icon" href="assets/app-icon.png" type="image/png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cl-todo-app-web.pages.dev/" />
+    <meta property="og:title" content="Todo工具 — 四象限待办 · 想法 · 纪念日" />
+    <meta
+      property="og:description"
+      content="按紧急/重要划分任务，记下想法与纪念日。VIP：密码本、黄金记账、WebDAV 多端同步。"
+    />
+    <meta property="og:image" content="https://cl-todo-app-web.pages.dev/assets/app-icon.png" />
+    <meta property="og:locale" content="zh_CN" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Todo工具",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Android",
+        "url": "https://cl-todo-app-web.pages.dev/",
+        "image": "https://cl-todo-app-web.pages.dev/assets/app-icon.png",
+        "description": "四象限待办 Android 应用：任务、想法、纪念日提醒；VIP 解锁密码本、黄金记账与 WebDAV 多端同步。",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="grid-mesh"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Todo工具首页">
+        <img src="assets/app-icon.png" alt="Todo工具" width="36" height="36" />
+        <span>Todo工具</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#features">功能</a>
+        <a href="#vip">VIP</a>
+        <a href="#contact" hidden>联系</a>
+        <a href="#download" class="nav-cta">下载</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>
+            <span class="brand-hero">Todo工具</span>
+            <span class="hero-tagline" id="hero-tagline">四象限待办 · 想法 · 纪念日</span>
+          </h1>
+          <p class="hero-lead" id="hero-lead">
+            按紧急 / 重要划分任务，顺手记下想法与纪念日。开通 VIP 后可使用账号管理（密码本）、黄金记账与 WebDAV 多端同步。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="btn-download" href="#download">下载 Android 版</a>
+            <a class="btn btn-ghost" href="#features">了解功能</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-bar">
+                <strong>Todo工具</strong>
+                <span>今天</span>
+              </div>
+              <div class="matrix">
+                <div class="quad q1">
+                  <em>紧急 · 重要</em>
+                  <span>交方案初稿</span>
+                </div>
+                <div class="quad q2">
+                  <em>不紧急 · 重要</em>
+                  <span>周计划复盘</span>
+                </div>
+                <div class="quad q3">
+                  <em>紧急 · 不重要</em>
+                  <span>回消息</span>
+                </div>
+                <div class="quad q4">
+                  <em>不紧急 · 不重要</em>
+                  <span>刷短视频</span>
+                </div>
+              </div>
+              <div class="phone-chip pulse">纪念日 · 还有 3 天</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <header class="section-head">
+          <h2>把待办、想法、日子，放进同一处</h2>
+          <p>免费即可用四象限与提醒；VIP 再解锁同步与进阶工具。</p>
+        </header>
+        <div class="feature-rail" id="feature-rail">
+          <article>
+            <h3>四象限任务</h3>
+            <p>按紧急 / 重要拆分，桌面小组件一眼看清今日重点。</p>
+          </article>
+          <article>
+            <h3>想法收集</h3>
+            <p>灵感先记下来，稍后再整理成可执行任务。</p>
+          </article>
+          <article>
+            <h3>纪念日提醒</h3>
+            <p>重要日子提前提醒，不再错过纪念日与约定。</p>
+          </article>
+          <article>
+            <h3>VIP 多端同步</h3>
+            <p>WebDAV 同步与自动备份；密码本与黄金记账一并解锁。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="vip" class="section section-alt">
+        <header class="section-head">
+          <h2>免费可用，VIP 更省心</h2>
+          <p>同一激活码支持多台设备：换机输入同码即可同步权益，无需重新购买。</p>
+        </header>
+        <div class="vip-compare" id="vip-compare" role="table" aria-label="权益对比">
+          <div class="vip-row vip-head" role="row">
+            <span role="columnheader">权益</span>
+            <span role="columnheader">免费</span>
+            <span role="columnheader">VIP</span>
+          </div>
+          <div class="vip-row" role="row">
+            <span>账号管理（密码本）</span>
+            <span>不可用</span>
+            <span>可用</span>
+          </div>
+          <div class="vip-row" role="row">
+            <span>黄金记账</span>
+            <span>不可用</span>
+            <span>可用</span>
+          </div>
+          <div class="vip-row" role="row">
+            <span>WebDAV 多端同步</span>
+            <span>不可用</span>
+            <span>可用</span>
+          </div>
+          <div class="vip-row" role="row">
+            <span>多设备登录</span>
+            <span>仅本机</span>
+            <span>同码最多 3 台</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" hidden>
+        <header class="section-head">
+          <h2>联系方式</h2>
+          <p>使用或开通 VIP 遇到问题，可通过以下渠道联系。</p>
+        </header>
+        <div class="contact-grid" id="contact-list"></div>
+      </section>
+
+      <section id="download" class="section section-download section-alt">
+        <header class="section-head">
+          <h2>下载 Todo工具</h2>
+        </header>
+        <div class="download-panel">
+          <div class="download-list" id="download-list"></div>
+          <p class="help" id="download-hint"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="assets/app-icon.png" alt="Todo工具" width="28" height="28" />
+        <span>Todo工具</span>
+      </div>
+      <p>四象限待办 · 想法 · 纪念日 · Android</p>
+      <p class="footer-meta">© <span id="year"></span> Todo工具</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

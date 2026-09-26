@@ -1,0 +1,4 @@
+# Cloudflare Pages — Todo 官网（纯静态）
+name = "cl-todo-app-web"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "."
