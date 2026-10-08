@@ -1,6 +1,13 @@
 # Todo工具官网（cl-todo-app-web）
 
-静态介绍站，结构对齐 [网兜官网](../cl-network-disk-web)，部署到 **Cloudflare Pages**。
+静态介绍站，结构对齐 [网兜官网](../cl-network-disk-web)。环境约定：
+
+| 环境 | 分支 | 托管 |
+|------|------|------|
+| **测试** | `main` | GitHub Pages（Actions）+ CF Preview |
+| **生产** | `production` | Cloudflare Pages |
+
+代码源以 **GitHub** 为准；Gitee `origin` 仅作镜像。
 
 ## 本地预览
 
@@ -39,17 +46,24 @@ window.TODO_SITE = {
 };
 ```
 
-## 部署到 Cloudflare Pages
-
-需已 `wrangler login`：
+## 部署到 Cloudflare Pages（生产）
 
 ```bash
 npm install
-npm run deploy
-# 等价：npx wrangler pages deploy . --project-name=cl-todo-app-web
+npm run deploy          # → production 分支
+npm run deploy:preview  # → main 预览
 ```
 
-线上地址：https://cl-todo-app-web.pages.dev/
+生产：https://cl-todo-app-web.pages.dev/
+
+Cloudflare Dashboard 建议连接 GitHub，**Production branch = `production`**。
+
+## 部署到 GitHub Pages（测试）
+
+推送 `main` 后由 `.github/workflows/deploy-pages.yml` 自动发布。
+
+1. 仓库 **Settings → Pages** → Source 选 **GitHub Actions**
+2. 测试地址：`https://xiaochenbian-new.github.io/cl-todo-app-web/`
 
 ## 远程仓库
 
