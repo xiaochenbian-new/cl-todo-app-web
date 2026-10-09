@@ -4,8 +4,8 @@
   "description": "Todo工具官网（Cloudflare Pages 静态站）",
   "scripts": {
     "dev": "wrangler pages dev .",
-    "deploy": "wrangler pages deploy . --project-name=cl-todo-app-web --branch production",
-    "deploy:preview": "wrangler pages deploy . --project-name=cl-todo-app-web --branch main"
+    "deploy": "wrangler pages deploy . --project-name=cl-todo-app-web --branch production --commit-dirty=true",
+    "deploy:preview": "wrangler pages deploy . --project-name=cl-todo-app-web --branch main --commit-dirty=true"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
